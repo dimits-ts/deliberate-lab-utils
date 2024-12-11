@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR=$(dirname "$0")
+source build_scripts/env.sh
 
-cd "$SCRIPT_DIR"
-cd ..
-cd utils
+cd "$SRC_ROOT_DIR/utils"
+
 npm install
 npm run build:watch

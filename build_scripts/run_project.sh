@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR=$(dirname "$0")
+source build_scripts/env.sh
 
-cd "$SCRIPT_DIR"
-cd ..
-cd frontend
+cd "$SRC_ROOT_DIR/frontend"
+
 npm install
 npm run start

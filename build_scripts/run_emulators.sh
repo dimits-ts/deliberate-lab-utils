@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR=$(dirname "$0")
+source build_scripts/env.sh
 
-cd "$SCRIPT_DIR"
-cd ..
+cd "$SRC_ROOT_DIR"
 
 firebase emulators:start --import ./emulator_test_config
